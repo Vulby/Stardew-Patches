@@ -1,0 +1,75 @@
+{
+  "Changes": [
+    /*Forest*/
+    {
+      "LogName": "Revised SVE x CC Patch",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/Maps/Revised_SVE_CC.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 11,
+        "Height": 18
+      },
+      "ToArea": {
+        "X": 70,
+        "Y": 0,
+        "Width": 11,
+        "Height": 18
+      },
+      "PatchMode": "Replace",
+      "AddWarps": [
+        "76 0 Custom_Cinder_CindersnapCircle 7 28"
+      ],
+      "When": {
+        "HasMod |contains=k80chimaera.CinderCircle": true,
+        "RevisedEdits": true
+      }
+    },
+    {
+      "LogName": "SVE x Alec Patch",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/Maps/SVE_Alec.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 21,
+        "Height": 18
+      },
+      "ToArea": {
+        "X": 64,
+        "Y": 17,
+        "Width": 21,
+        "Height": 18
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasMod |contains=SoftPandaBoi.CPAlecRevisited": true
+      }
+    },
+    {
+      "LogName": "SVE x Therapist Patch",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/Maps/SVE_Therapist.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 13,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": 107,
+        "Y": 0,
+        "Width": 13,
+        "Height": 25
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "HasMod |contains=Endwyr.TherapistNPC": true
+      }
+    }
+  ]
+}

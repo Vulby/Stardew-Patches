@@ -1,0 +1,40 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "LogName": "Revised RSV x Bus Stop Patch",
+      "Action": "EditMap",
+      "Target": "Maps/BusStop",
+      "FromFile": "assets/Maps/Revised_RSV_Bus_Stop.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 7,
+        "Height": 13
+      },
+      "ToArea": {
+        "X": 35,
+        "Y": 10,
+        "Width": 7,
+        "Height": 13
+      },
+      "PatchMode": "ReplaceByLayer",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 40,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message \"rsv.BusStop\""
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true,
+        "RevisedEdits": true
+      }
+    }
+  ]
+}

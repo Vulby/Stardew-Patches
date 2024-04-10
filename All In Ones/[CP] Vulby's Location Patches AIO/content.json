@@ -1,0 +1,29 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+      "RevisedEdits": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      }
+   },
+  "Changes": [
+    {
+      "Action": "Include",
+      "FromFile": "assets/SVE_Map_Patches.json",
+	  "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+	{
+      "Action": "Include",
+      "FromFile": "assets/MLQO_Map_Patches.json",
+	  "When": {
+        "HasMod |contains=Aimon111.MoreLivelyQuarryOverhaul": true
+      }
+    },
+	{
+      "Action": "Include",
+      "FromFile": "assets/Misc_Map_Patches.json"
+    }
+  ]
+}
