@@ -1,0 +1,13 @@
+Vulby's Alec Revisited - SVE Patch
+
+	0.0.3 	
+		Patch renamed to Vulby's Alec Revisited - SVE Patch
+		Fixed Paths Layer
+
+	0.0.2	Released
+		Corrected spelling of every instance of Revisited from Revisted
+		Added Update Keys
+		Switched UniqueID to Vulbys_LocationFixes_AR_SVE
+
+	0.0.1	Released
+		Initial Release

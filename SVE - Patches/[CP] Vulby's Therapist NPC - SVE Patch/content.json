@@ -1,0 +1,23 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/Therapist_SVE.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 13,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": 107,
+        "Y": 0,
+        "Width": 13,
+        "Height": 25
+      },
+      "PatchMode": "Replace",
+    }
+  ]
+}

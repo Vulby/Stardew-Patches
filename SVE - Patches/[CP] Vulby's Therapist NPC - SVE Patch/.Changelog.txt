@@ -1,0 +1,11 @@
+Vulby's Therapist NPC - SVE Patch
+
+	0.0.3	Released
+		Patch renamed to Vulby's Therapist NPC - SVE Patch
+		Updated dependencies for new UniqueID
+
+	0.0.2	Released
+		Fixed missing warp into the house
+
+	0.0.1	Released
+		Initial Release

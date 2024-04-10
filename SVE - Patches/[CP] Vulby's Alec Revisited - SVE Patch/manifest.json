@@ -1,0 +1,22 @@
+{
+  "Name": "Vulby's Alec Revisited - SVE Patch",
+  "Author": "Vulby",
+  "Version": "0.0.3",
+  "Description": "",
+  "UniqueID": "Vulbys_LocationFixes_AR_SVE",
+  "MinimumApiVersion": "3.4.1",
+  "UpdateKeys": [
+    "Nexus:21574"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP"
+    },
+    {
+      "UniqueID": "SoftPandaBoi.CPAlecRevisited"
+    }
+  ]
+}

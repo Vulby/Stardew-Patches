@@ -1,0 +1,43 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+	  "LogName": "SVE x Alec Patch",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/SVE_Alec_Overlay.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 21,
+        "Height": 18
+      },
+      "ToArea": {
+        "X": 64,
+        "Y": 17,
+        "Width": 21,
+        "Height": 18
+      },
+      "PatchMode": "Overlay",
+    },
+	{
+	  "LogName": "SVE x Alec Paths Layer Fix",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/SVE_Alec_Paths_Layer.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 21,
+        "Height": 18
+      },
+      "ToArea": {
+        "X": 64,
+        "Y": 17,
+        "Width": 21,
+        "Height": 18
+      },
+      "PatchMode": "ReplaceByLayer",
+    }
+  ]
+}

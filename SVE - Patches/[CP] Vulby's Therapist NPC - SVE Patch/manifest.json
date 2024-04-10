@@ -1,0 +1,22 @@
+{
+  "Name": "Vulby's Therapist NPC - SVE Patch",
+  "Author": "Underscore",
+  "Version": "0.0.3",
+  "Description": "",
+  "UniqueID": "Vulbys_LocationFixes_T_SVE",
+  "MinimumApiVersion": "3.4.1",
+  "UpdateKeys": [
+    "Nexus:21765"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP"
+    },
+    {
+      "UniqueID": "Endwyr.TherapistNPC"
+    }
+  ]
+}
