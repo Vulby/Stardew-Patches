@@ -1,0 +1,9 @@
+Further fixes on Grey's House, Stop Cows and Goats spawning within the area
+
+Cape Stardew, make the roads more rugged instead of straight lines
+
+Richie, Blend bus route path better with SVE/Grandpa's farm
+
+Jean and Jorts patches;
+	Remove plank in SVE Mountains		SVE Patch
+
