@@ -1,0 +1,27 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+	  "LogName": "Cindersnap SVE edit",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/Revised_Cindersnap_SVE.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 11,
+        "Height": 18
+      },
+      "ToArea": {
+        "X": 70,
+        "Y": 0,
+        "Width": 11,
+        "Height": 18
+      },
+      "PatchMode": "ReplaceByLayer",
+      "AddWarps": [
+        "76 0 Custom_Cinder_CindersnapCircle 7 28",
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "Changes": [
+    /*Night Market*/
+    /*Fixes: 29*/
+    /*Essential NPCs Night Market Fixes: Adds missing house in Night Market Map*/
+    /*Mods: Essential NPCs - EssentialVegans*/
+    /*Changes: Adds their house to the night market map for the duration of the event*/
+    {
+      "LogName": "Vulby NPC Fix 29",
+      "Action": "EditMap",
+      "Target": "Maps/Beach-NightMarket",
+      "FromFile": "assets/Maps/EssentialNPCs_Night-Market-Fix.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 7,
+        "Height": 6
+      },
+      "ToArea": {
+        "X": 29,
+        "Y": 0,
+        "Width": 7,
+        "Height": 6
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "HasMod |contains=Endwyr.EssentialNPCsVegans": true,
+        "Season": "Winter",
+        "Day": "15, 16, 17"
+      }
+    }
+  ]
+}

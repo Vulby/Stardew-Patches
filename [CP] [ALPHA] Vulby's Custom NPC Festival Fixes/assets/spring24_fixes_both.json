@@ -1,0 +1,252 @@
+{
+  "Changes": [
+    /*Last Updated:080424 - Patches that work for Vanilla and SVE had SVE requirement dropped*/
+    /*setup*/
+    {
+      "LogName": "Vanilla Patch for CC Faye",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "K80Faye 18 22 2",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "K80Faye 16 22 2",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=k80chimaera.CinderCircle": true
+      }
+    },
+    {
+      "LogName": "Vanilla Patch for CC Skye",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Skye 14 21 2",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Skye 13 20 2",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=k80chimaera.CinderCircle": true
+      }
+    },
+    {
+      "LogName": "Vanilla Patch for ARV",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Sterling 20 34 1",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Henry 21 35 0",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Mia 21 33 2",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Sterling 20 33 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Henry 21 34 0",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Mia 21 32 2",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=Himetarts.ARV.CP": true
+      }
+    },
+    {
+      "LogName": "SVE Patch for Jean and Jorts and East Scarp",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "JortsCat 22 41 up",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "JeanCat 23 41 down",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "JortsCat 26 42 up",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "JeanCat 27 42 down",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=tiakall.jortsandjean": true,
+        "HasMod |contains=LemurKat.EastScarpe.CP": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "LogName": "AND Patch for SNS",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "FC.Barron 21 22 0",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "FC.Phoebe 20 21 1",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "FC.Barron 13 33 0",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "FC.Phoebe 12 32 1",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=Fellowclown.AND": true,
+        "HasMod |contains=DN.SnS": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "LogName": "Vanilla odd year patch for Tori from East Scrap",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "ToriLK 28 42 3",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "ToriLK 26 42 3",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    }
+    /*main*/
+  ]
+}

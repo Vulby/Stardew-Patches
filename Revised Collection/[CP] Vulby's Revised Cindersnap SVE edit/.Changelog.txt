@@ -1,0 +1,11 @@
+Vulby's Revised Cindersnap SVE
+
+ 	0.0.3 
+		Updated patch name to Vulby's Revised Cindersnap SVE
+		Minor json edits
+
+	0.0.2	Released
+		Fixed Update Keys
+
+	0.0.1	Released
+		Initial Release

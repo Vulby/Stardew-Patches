@@ -1,0 +1,22 @@
+{
+  "Name": "Vulby's Lively Quarry Dam Patch",
+  "Author": "Vulby",
+  "Version": "0.0.1",
+  "Description": "",
+  "UniqueID": "Vulbys_LocationFixes_MLQ_Dam",
+  "MinimumApiVersion": "3.4.1",
+  "UpdateKeys": [
+    "Nexus:21559@Dam"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Tikamin557.dam"
+    },
+    {
+      "UniqueID": "Aimon111.MoreLivelyQuarryOverhaul"
+    }
+  ]
+}

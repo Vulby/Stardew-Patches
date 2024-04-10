@@ -1,0 +1,90 @@
+{
+  "Name": "Vulby's Custom NPC Festival Fixes",
+  "Author": "Vulby",
+  "Version": "0.0.1",
+  "Description": "",
+  "UniqueID": "Vulbys_LocationFixes_NPCs",
+  "MinimumApiVersion": "3.4.1",
+  "UpdateKeys": [
+    "Nexus:22093"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "tiakall.jortsandjean",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Himetarts.ARV.CP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Lemurkat.NPCJasper",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "k80chimaera.CinderCircle",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "LemurKat.EastScarpe.CP",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "MrMrRogers.Richie",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "SoftPandaBoi.CPAlecRevisited",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "invatorzen.AspenCP",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "EastScarp.FGES",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "AndrewJC.APelicanTown",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Bagi.Nora.CP",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Rafseazz.RSVCP",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Endwyr.EssentialNPCsVegans",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "TheFrenchDodo.RodneyOBrien",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "DN.SnS",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Rafseazz.LunnaCP",
+      "IsRequired": false
+    }
+	,
+	{
+      "UniqueID": "Arknir.Lucikiel",
+      "IsRequired": false
+    }
+	
+  ]
+}

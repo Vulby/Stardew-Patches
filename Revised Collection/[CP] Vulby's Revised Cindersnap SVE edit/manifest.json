@@ -1,0 +1,22 @@
+{
+  "Name": "Vulby's Revised Cindersnap SVE",
+  "Author": "Vulby",
+  "Version": "0.0.3",
+  "Description": "",
+  "UniqueID": "Vulbys_LocationFixes_CC_SVE",
+  "MinimumApiVersion": "3.4.1",
+  "UpdateKeys": [
+    "Nexus:21692"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "k80chimaera.CinderCircle"
+    },
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP"
+    }
+  ]
+}

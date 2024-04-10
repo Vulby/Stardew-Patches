@@ -1,0 +1,19 @@
+{
+  "Name": "Vulby's Revised RSV Bus Stop edit",
+  "Author": "Vulby",
+  "Version": "0.0.2",
+  "Description": "",
+  "UniqueID": "Vulbys_LocationFixes_RSV_BS_Edit",
+  "MinimumApiVersion": "3.4.1",
+  "UpdateKeys": [
+    "Nexus:21695"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Rafseazz.RSVCP"
+    }
+  ]
+}

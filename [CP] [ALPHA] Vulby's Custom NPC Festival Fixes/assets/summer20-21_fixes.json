@@ -1,0 +1,33 @@
+{
+  "Changes": [
+    /*Trout Derby*/
+    /*Fixes: 13*/
+    /*Essential NPCs Trout Derby Fixes: Boulders & Tree*/
+    /*Mods: Essential NPCs - EssentialVegans*/
+    /*Changes: Hides the two boulders and tree for the duration of the event*/
+    {
+      "LogName": "Vulby NPC Fix 13",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "assets/Maps/EssentialNPCs_Trout-Derby-Fix.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 7,
+        "Height": 12
+      },
+      "ToArea": {
+        "X": 62,
+        "Y": 37,
+        "Width": 7,
+        "Height": 12
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "HasMod |contains=Endwyr.EssentialNPCsVegans": true,
+        "Season": "Summer",
+        "Day": "20, 21"
+      }
+    }
+  ]
+}

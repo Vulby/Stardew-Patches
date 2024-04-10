@@ -1,0 +1,189 @@
+{
+  "Changes": [
+    /*Luau Fixes*/
+    /*Fixes: 8-12*/
+    /*Vanilla Luau Fixes: Aspen overlaps with Beatrice*/
+    /*Mods: Aspen - New Custom Dateable NPC*/
+    /*Mods: East Scrap*/
+    /*Changes: Moves Aspen left one tile*/
+    {
+      "LogName": "Vulby NPC Fix 8",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Aspen 49 19 down",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Aspen 48 19 down",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true,
+        "HasMod |contains=invatorzen.AspenCP": true
+      }
+    }
+    /*SVE Luau Fixes: Fievel is inside a post*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: Fievel Goes East Scarp - Hat Mouse NPC*/
+    /*Changes: Moves Fievel down one tile*/,
+    {
+      "LogName": "Vulby NPC Fix 9",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Fievel 8 3 2",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Fievel 8 4 2",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=EastScarp.FGES": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    }
+    /*SVE Luau Fixes: Sterling is inside a table*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: Always Raining in the Valley - Custom NPCs for East Scarp*/
+    /*Changes: Moves Sterling up one tile*/,
+    {
+      "LogName": "Vulby NPC Fix 10",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Sterling 52 14 1",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Sterling 52 13 1",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=Himetarts.ARV.CP": true
+      }
+    }
+    /*SVE Luau Fixes: Jean and Jorts in the water*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: Jorts and Jean the Helper Cats - New Custom NPCs*/
+    /*Changes: Moves Jorts and Jean onto the dock*/,
+    {
+      "LogName": "Vulby NPC Fix 11",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "JortsCat 22 41 up",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "JeanCat 23 41 down",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "JortsCat 25 36 up",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "JeanCat 26 36 down",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=tiakall.jortsandjean": true
+      }
+    }
+    /*SVE Luau Fixes: Thompson and Haley overlap in main event*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: A Pelican Town - NPC Expansion Mod*/
+    /*Changes: Moves Thompson down one tile*/,
+    {
+      "LogName": "Vulby NPC Fix 12",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Search": "Thompson 27 12 1",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "Thompson 27 13 1",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=AndrewJC.APelicanTown": true
+      }
+    }
+  ]
+}

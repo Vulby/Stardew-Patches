@@ -1,0 +1,159 @@
+{
+  "Changes": [
+    /*Moonlight Jellies Fixes*/
+    /*Fixes: 14-17*/
+    /*SVE Moonlight Jellies Fixes: Bryson overlaps with Andy*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: Cindersnap Circle*/
+    /*Changes: Moves Bryson left two tile*/
+    {
+      "LogName": "Vulby NPC Fix 14",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Bryson 16 24 2",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Bryson 14 24 2",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=k80chimaera.CinderCircle": true
+      }
+    }
+    /*SVE Moonlight Jellies Fixes: Nora overlap when Jas moves*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: Nora The Herpetologist - Custom NPC for East Scarp*/
+    /*Changes: Moves Nora up one tile*/,
+    {
+      "LogName": "Vulby NPC Fix 15",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Nora 24 32 3",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Nora 24 31 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Search": "Nora 24 32 3",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "Nora 24 31 3",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=Bagi.Nora.CP": true
+      }
+    }
+    /*Moonlight Jellies Fixes*/
+    /*SVE Moonlight Jellies Fixes: Philip overlaps when Harvey Moves*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: Ridgeside Village*/
+    /*Changes: Moves Philip right two tile*/,
+    {
+      "LogName": "Vulby NPC Fix 16",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Philip 68 24 down",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Philip 70 24 down",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    }
+    /*Moonlight Jellies Fixes*/
+    /*SVExES Moonlight Jellies Fixes: Richie blocks ES Boat*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: East Scrap*/
+    /*Changes: Moves Richie up 4 tiles and left two tiles*/,
+    {
+      "LogName": "Vulby NPC Fix 17",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Richie 90 39 right",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Richie 88 35 right",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=MrMrRogers.Richie": true,
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+Vulby's Lively Quarry East Scarp Patch
+
+	0.0.3	Released
+		Added a fix for East Scrap Deep Mountains when not using SVE
+
+	0.0.2	Released
+		Fixed dependencies from FlashShifter.StardewValleyExpandedCP -> LemurKat.EastScarpe.CP
+		Added Update Keys
+		Switched UniqueID to Vulbys_LocationFixes_MLQ_ES
+		
+	0.0.1	Released
+		Initial Release

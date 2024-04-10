@@ -1,0 +1,32 @@
+{
+  "Format": "2.0.0",
+  "DynamicTokens": [
+    {
+      "Name": "IsOddYear",
+      "Value": "{{Query: {{Year}} % 2 = 1}}"
+    }
+  ],
+  "Changes": [
+    /*todo split into y1, y2 and both also desert festival*/
+    {
+      "Action": "Include",
+      "FromFile": "assets/spring13_fixes_both.json, assets/spring24_fixes_both.json, assets/summer11_fixes.json, assets/summer20-21_fixes.json, assets/summer28_fixes.json, assets/fall16_fixes.json, assets/fall27_fixes.json, assets/winter8_fixes.json, assets/winter15-17_fixes.json, assets/winter25_fixes.json"
+    },
+    /*odd year fixes*/
+    {
+      "Action": "Include",
+      "FromFile": "assets/spring13_fixes_y1.json, assets/spring24_fixes_y1.json",
+      "When": {
+        "IsOddYear": true
+      }
+    },
+    /*even year fixes*/
+    {
+      "Action": "Include",
+      "FromFile": "assets/spring13_fixes_y2.json, assets/spring24_fixes_y2.json",
+      "When": {
+        "IsOddYear": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "Changes": [
+    /*Winter Star*/
+    /*Fixes: 30-34*/
+    /*Vanilla Winter Star: Alec and Skye overlap*/
+    /*Mods: Cindersnap Circle*/
+    /*Mods: Alec Revisted*/
+    /*Changes: Moves Alec one tile down*/
+    {
+      "LogName": "Vulby NPC Fix 30",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "SPB_Alec 16 64 right",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "SPB_Alec 16 65 right",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=SoftPandaBoi.CPAlecRevisited": true,
+        "HasMod |contains=k80chimaera.CinderCircle": true
+      }
+    }
+    /*Winter Star*/
+    /*Fixes: 29*/
+    /*SVE Winter Star: Dimitri standing on box*/
+    /*Mods: Cindersnap Circle*/
+    /*Mods: Alec Revisted*/
+    /*Changes: Moves Alec one tile down*/,
+    {
+      "LogName": "Vulby NPC Fix 31",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Dimitri 16 62 1",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Dimitri 20 61 1",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=k80chimaera.CinderCircle": true
+      }
+    }
+    /*SVE Festival of Ice: Aspen overlap with Rosa*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: East Scrap*/
+    /*Mods: Aspen - New Custom Dateable NPC*/
+    /*Changes: Moves Ezekiel down one tile & Moves Ariah down one tile*/,
+    {
+      "LogName": "Vulby NPC Fix 32",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Aspen 21 63 right",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Aspen 21 66 right",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=invatorzen.AspenCP": true,
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    }
+    /*SVE Festival of Ice: Richie staring at Nora*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: Richie - New Custom NPC*/
+    /*Mods: Nora The Herpetologist - Custom NPC for East Scarp*/
+    /*Changes: Moves Richie up a few tiles*/,
+    {
+      "LogName": "Vulby NPC Fix 33",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Richie 26 68 left",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Richie 26 65 left",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=Bagi.Nora.CP": true,
+        "HasMod |contains=MrMrRogers.Richie": true
+      }
+    }
+    /*SVE Festival of Ice: Byrson overlap with Morris*/
+    /*Mods: Stardew Valley Expanded*/
+    /*Mods: Cindersnap Circle*/
+    /*Changes: Moves Milo and Bryson down a few tiles*/,
+    {
+      "LogName": "Vulby NPC Fix 34",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Bryson 38 59 1",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Milo 40 59 3",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Bryson 38 61 1",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Milo 40 61 3",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=k80chimaera.CinderCircle": true
+      }
+    }
+  ]
+}

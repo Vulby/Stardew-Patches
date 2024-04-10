@@ -1,0 +1,95 @@
+{
+  "Changes": [
+    /*Last Updated:070424*/
+    /*setup*/
+    {
+      "LogName": "CC odd year patch for Professor Jasper Thomas",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Jasper 4 29 down",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Jasper 5 29 down",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=Lemurkat.NPCJasper": true,
+        "HasMod |contains=k80chimaera.CinderCircle": true
+      }
+    },
+    {
+      "LogName": "SVE odd year patch for Raphael from Lunna Astray",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Raphael 9 38 up",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Raphael 9 34 down",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=Rafseazz.LunnaCP": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasSeenEvent": "75160015"
+      }
+    }
+    /*main*/,
+    {
+      "LogName": "SVE odd year patch for Alec Revisted",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Search": "SPB_Alec 23 22 left",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "MainEvent_additionalCharacters"
+          ],
+          "Value": "SPB_Alec 23 21 left",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=SoftPandaBoi.CPAlecRevisited": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    }
+  ]
+}

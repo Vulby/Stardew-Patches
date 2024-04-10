@@ -1,0 +1,144 @@
+{
+  "Changes": [
+    /*Last Updated:070424*/
+    /*setup*/
+    {
+      "LogName": "SVE odd year patch for Jean and Jorts",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "JortsCat 29 62 right",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "JeanCat 30 62 left",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "JortsCat 33 62 right",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "JeanCat 34 62 left",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=tiakall.jortsandjean": true
+      }
+    },
+    {
+      "LogName": "SVE odd year patch for ARV Sterling",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Sterling 24 56 3",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Sterling 26 53 3",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=Himetarts.ARV.CP": true
+      }
+    },
+    {
+      "LogName": "AND odd year patch for CD Rodney on SVE map",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "RodneyOBrien 48 56 2",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "RodneyOBrien 47 58 2",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=Fellowclown.AND": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=TheFrenchDodo.RodneyOBrien": true,
+        "HasSeenEvent": "Fellowclown.AND_PopsBeachVisit"
+      }
+    },
+    {
+      "LogName": "CS odd year patch for CS Annetta",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "TextOperations": [
+        {
+          "Operation": "RemoveDelimited",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Search": "Annetta 31 57 3",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Set-Up_additionalCharacters"
+          ],
+          "Value": "Annetta 35 57 3",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=Lemurkat.NPCJasper": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=dreamygloom.AnnettaNPC": true
+      }
+    }
+    /*main*/
+  ]
+}

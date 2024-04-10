@@ -1,7 +1,7 @@
 {
   "Name": "Vulby's Location Patches AIO",
   "Author": "Vulby",
-  "Version": "0.0.2",
+  "Version": "0.0.1",
   "Description": "A bunch of fixes, edits and compatibility for various mod combinations",
   "UniqueID": "Vulby_LocationsAIO",
   "MinimumApiVersion": "3.4.1",

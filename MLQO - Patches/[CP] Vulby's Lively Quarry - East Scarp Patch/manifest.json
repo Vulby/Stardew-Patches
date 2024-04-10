@@ -1,0 +1,22 @@
+{
+  "Name": "Vulby's Lively Quarry East Scarp Patch",
+  "Author": "Vulby",
+  "Version": "0.0.3",
+  "Description": "",
+  "UniqueID": "Vulbys_LocationFixes_MLQ_ES",
+  "MinimumApiVersion": "3.4.1",
+  "UpdateKeys": [
+    "Nexus:21559@ES"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "LemurKat.EastScarpe.CP"
+    },
+    {
+      "UniqueID": "Aimon111.MoreLivelyQuarryOverhaul"
+    }
+  ]
+}
