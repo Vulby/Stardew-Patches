@@ -20,8 +20,3 @@ Stardew Valley Expanded patches:
 
     Alec Revisted
     Therapist NPC
-
-Revised Collection:
-
-    Ridgeside Village Bus Stop edit
-    Cindersnap Circle SVE patch edit
